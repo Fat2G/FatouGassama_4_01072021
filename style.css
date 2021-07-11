@@ -679,7 +679,10 @@ a {
 p {
     font-size: 16px;
 }
-
+/* font-size des commentaires "p" */
+.comment{
+    font-size: 22px;
+}
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
