@@ -335,6 +335,7 @@ a:hover {
 .nav > li a:hover,
 .nav > li a:focus {
     background: transparent;
+    color: blue;/* A VERIFIER */
 }
 
 .navbar-toggle {
@@ -789,7 +790,8 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus{
     background: #c27956!important;
     color: #FFFFFF!important;
 }
