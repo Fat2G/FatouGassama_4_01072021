@@ -91,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .2)), url("img/texture-paper.png");
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .1)), url("img/texture-paper.png");
     background-size: 280px 280px;  
 }
 
@@ -357,12 +357,17 @@ a:hover {
 }
 
 @media (min-width: 768px) {
-    .site-navigation {
+    .site-navigation,
+    .site-navigation-contact {
         position: absolute;
         top: 50%;
-        right: 20px;
+        right: 20px; 
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
+    }
+    .site-navigation-contact{
+        right: 15%;
+        top: 25%;
     }
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
@@ -498,13 +503,41 @@ button {
 .panel-rd .panel-footer {
     border-radius: 0 0 29px 29px;
 }
-
-.form-control {
-    border-color: rgba(0, 0, 0, .1);
-    box-shadow: none;
-    margin: 10px 0px;
+/* formulaire de contact */
+form{
+    width: 100%;
+    margin: auto;
+}
+.form-group{
+    max-width: 500px;
+    margin: auto;
+    position: relative;
 }
 
+.form-control {
+    display: block;
+    width: 100%;
+    border-color: rgba(0, 0, 0, .1);
+    box-shadow: none;
+    margin: 5px 0px 15px 0px;    
+    padding: 5px 10px;  
+    font-size: 16px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;  
+}
+
+.form-control:hover,
+.form-control:focus{
+    outline: none;
+    border-color: #AF4147;
+    box-shadow: 0 0 10px #AF4147;
+}
+.form-control-center{
+    text-align: center;
+} 
+.form-control-center[type=submit]{
+    display: block;
+    margin: 30px auto;
+}
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -651,7 +684,8 @@ a {
 }
 
 .container {
-    max-width: 1000px;
+    /* max-width: 1000px; */
+    width: 100%;
 }
 
 .hero-bloc-text {
