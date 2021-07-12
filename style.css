@@ -504,6 +504,11 @@ button {
     border-radius: 0 0 29px 29px;
 }
 /* formulaire de contact */
+.form-contact{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 form{
     width: 100%;
     margin: auto;
@@ -533,10 +538,12 @@ form{
 }
 .form-control-center{
     text-align: center;
-} 
+}
+/* formulaire - bouton envoyer */ 
 .form-control-center[type=submit]{
     display: block;
     margin: 30px auto;
+    width: 30%;
 }
 .scrollToTop {
     width: 40px;
@@ -1067,6 +1074,9 @@ h4 {
     .bloc {
         padding-left: 0;
         padding-right: 0;
+    }
+    .form-control-center[type=submit]{
+        width: 40%;
     }
 }
 
