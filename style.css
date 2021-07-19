@@ -290,8 +290,9 @@ a:hover {
 .navbar {
     margin-bottom: 0;
     z-index: 1;
+    display: flex;
+    
 }
-
 .navbar-brand {
     height: auto;
     padding: 3px 15px;
@@ -355,16 +356,15 @@ a:hover {
     position: relative;
     z-index: 2;
 }
-
+.site-navigation,
+.site-navigation-contact {
+    position: absolute;
+    top: 50%;
+    right: 20px; 
+    transform: translate(0, -50%);
+    -webkit-transform: translateY(-50%);
+}
 @media (min-width: 768px) {
-    .site-navigation,
-    .site-navigation-contact {
-        position: absolute;
-        top: 50%;
-        right: 20px; 
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
     .site-navigation-contact{
         right: 15%;
         top: 25%;
@@ -399,6 +399,9 @@ a:hover {
     .nav-center.mini-nav .navbar-toggle {
         float: none;
         margin: 10px auto 0;
+    }
+    .navbar {
+        flex-direction: row;
     }
 }
 
@@ -1074,20 +1077,21 @@ h4 {
         width: 40%;
     }
 }
-}
 
 @media (max-width: 400px) {
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
     .form-control-center[type=submit]{
         width: 40%;
-    }
+    }  
 }
 
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+@media (max-width: 320px) {   
+  .navbar .nav{
+    margin-right: -30px;
+  }  
 }
