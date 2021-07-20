@@ -1043,6 +1043,9 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+    .bloc-mob-center-text {
+        text-align: center;
+    }
     .a-block {
         padding: 0 10px;
     }
@@ -1083,12 +1086,6 @@ h4 {
     .form-control-center[type=submit]{
         width: 40%;
     }  
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
-    }
 }
 
 @media (max-width: 320px) {   
