@@ -364,6 +364,10 @@ a:hover {
     transform: translate(0, -50%);
     -webkit-transform: translateY(-50%);
 }
+.col-sm-6 img{
+    height: 100%;
+    width: 100%;
+}
 @media (min-width: 768px) {
     .site-navigation-contact{
         right: 15%;
@@ -863,10 +867,14 @@ h4 {
 
 .bg-banniere {
     background-image: url("img/la-chouette-agence-banniere.jpg");
+    height: auto;
+    width: 100%;
 }
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.jpg");
+    height: auto;
+    width: auto;
 }
 
 @media (max-width: 1024px) {
@@ -1085,7 +1093,7 @@ h4 {
 @media (max-width: 400px) {
     .form-control-center[type=submit]{
         width: 40%;
-    }  
+    } 
 }
 
 @media (max-width: 320px) {   
