@@ -31,7 +31,6 @@ a:hover {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -40,8 +39,8 @@ a:hover {
 }
 
 .bloc .container {
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .bloc-lg {
@@ -290,8 +289,7 @@ a:hover {
 .navbar {
     margin-bottom: 0;
     z-index: 1;
-    display: flex;
-    
+    display: flex; 
 }
 .navbar-brand {
     height: auto;
@@ -699,7 +697,6 @@ a {
 }
 
 .container {
-    /* max-width: 1000px; */
     width: 100%;
 }
 
@@ -720,7 +717,7 @@ a {
     max-width: 520px;
     margin: auto auto auto auto;
 }
-p, time {
+p, data {
     font-size: 16px;
 }
 /* font-size des commentaires "p" */
@@ -878,10 +875,6 @@ h4 {
 }
 
 @media (max-width: 1024px) {
-    .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
     .bloc.full-width-bloc,
     .bloc-tile-2.full-width-bloc .container,
     .bloc-tile-3.full-width-bloc .container,
@@ -906,7 +899,7 @@ h4 {
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -924,10 +917,7 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+    
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -936,8 +926,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
     .form-control-center[type=submit]{
         width: 40%;
@@ -963,11 +951,7 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
-    .navbar .nav {
-        padding-top: 0;
-        border-top: 1px solid rgba(0, 0, 0, .2);
-        float: none!important;
-    }
+    
     .navbar.row {
         margin-left: 0;
         margin-right: 0;
@@ -977,17 +961,6 @@ h4 {
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
-    }
-    .nav > li {
-        margin-top: 0;
-        border-bottom: 1px solid rgba(0, 0, 0, .1);
-        background: rgba(0, 0, 0, .05);
-        text-align: left;
-        padding-left: 15px;
-        width: 100%;
-    }
-    .nav > li:hover {
-        background: rgba(0, 0, 0, .08);
     }
     .dropdown .dropdown a .caret {
         float: none;
@@ -1028,10 +1001,7 @@ h4 {
         float: left;
         margin-left: 10px;
     }
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
+    
     .bloc-xxl,
     .bloc-xl,
     .bloc-lg {
@@ -1089,14 +1059,19 @@ h4 {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 425px) {
     .form-control-center[type=submit]{
         width: 40%;
     } 
+    
+    .navbar {
+        display: grid;
+        justify-items: start;   
+    }     
 }
 
 @media (max-width: 320px) {   
   .navbar .nav{
     margin-right: -30px;
-  }  
+  }   
 }
