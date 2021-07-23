@@ -132,7 +132,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .d-bloc .a-btn:hover,
@@ -230,7 +230,7 @@ a:hover {
 .l-bloc h5 a,
 .l-bloc h6 a,
 .l-bloc p a {
-    color: rgba(0, 0, 0, .6);
+    color: rgba(255,255,255,0.6);
 }
 
 .d-bloc .panel .a-btn:hover,
@@ -1081,23 +1081,29 @@ h4 {
 
 @media (max-width: 426px) {
     .form-control-center[type=submit]{
-        width: 40%;
+        width: 55%;
     } 
     
     .navbar {
         display: grid;
         justify-items: start;   
+    } 
+    .cta-hero{
+        padding: 10px 16px;
     }     
 }
 
 @media (max-width: 320px) {   
-  .navbar .nav{
+    .navbar .nav{
     margin-right: -30px;
-  } 
-  .nav>li>a:focus,
-.nav>li>a:hover {
-    text-decoration: none;
-    background-color: #DEB14A; 
-    padding-right: 30px;
-}  
+    } 
+    .nav>li>a:focus,
+    .nav>li>a:hover {
+        text-decoration: none;
+        background-color: #DEB14A; 
+        padding-right: 30px;
+    } 
+    .cta-hero{
+        padding: 10px 16px;
+    } 
 }
